@@ -4,8 +4,8 @@ function Header({ isDarkMode, onToggleDarkMode }) {
   return (
     <nav>
     <header>
-      <h1>Project management</h1>
-      <h2>Manage your projects.</h2>
+      <h1>PROJECT MANAGEMENT</h1>
+      
       <div className="toggle-switch">
         <input
           type="checkbox"

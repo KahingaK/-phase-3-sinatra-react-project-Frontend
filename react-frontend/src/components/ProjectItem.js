@@ -7,9 +7,7 @@ function ProjectItem({project, onProjectDelete}) {
           method: "DELETE",
         })
     
-        .then((r) => r.json())
-        .then((deletedProject) => onProjectDelete(deletedProject))
-
+        
         onProjectDelete(project.id)
 
       }
@@ -18,8 +16,9 @@ function ProjectItem({project, onProjectDelete}) {
 
   return (
     <li>
-       <h2> {project.title}</h2>
-       <p>Completion (%) : {project.completion}</p>
+       <h1> {project.title}</h1>
+       <h2>Client:{}</h2>
+       <p>Completion : {project.completion}%</p>
        <p> Comments : {project.comment}</p>
 
         <button onClick={handleDeleteClick}>delete

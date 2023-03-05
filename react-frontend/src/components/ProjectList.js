@@ -12,6 +12,7 @@ function ProjectList({projects,onProjectDelete}) {
             key={project.id}
             project={project}
             onProjectDelete={onProjectDelete}
+            
           />
         ))}
       </ul>

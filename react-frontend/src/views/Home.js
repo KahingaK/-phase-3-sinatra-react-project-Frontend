@@ -33,8 +33,12 @@ function Home() {
   return (
     <main className={isDarkMode ? "dark-mode" : ""}>
     <Header isDarkMode={isDarkMode} onToggleDarkMode={setIsDarkMode} />
+    <div className='add_new'>
+    <h2>Manage your projects:</h2>
     <NewClient/>
     <NewProject onAddProject = {handleAddProject}/>
+    </div>
+    
     <ProjectList
       projects={projects}
       onProjectDelete={handleDeleteProject}

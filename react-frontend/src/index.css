@@ -51,6 +51,13 @@ main {
 .highlight {
   border: 6px solid red;
 }
+.add_new{
+  margin:3px;
+  padding: 20px;
+  margin-bottom: 2px;
+  border: 4px solid #8baa7a;
+  border-radius: 20px;
+}
 
 input[type="text"] {
   color: var(--main-font-color);
@@ -58,8 +65,14 @@ input[type="text"] {
   font-size: 1rem;
   border: none;
   padding: 0.5em 1em;
-  transition: all 0.2s;
+  margin-left: 20px;
+  margin-top: 10px
+
+
+  
 }
+
+input[type="text"]
 
 input[type="text"]::placeholder {
   font-style: italic;
@@ -70,14 +83,52 @@ input[type="text"]:focus {
   background-color: var(--bg-color-3);
 }
 
-button[type="submit"] {
-  border: none;
-  font-size: 1rem;
-  width: 100px;
-  padding: 0.25rem;
-  background-color: var(--theme-primary);
-  color: var(--alt-font-color);
+select{
+  background-color: #fffefb;
+  box-shadow: 0px 0px 2px;
+  padding: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size:;
+ 
+  border-radius: 3px;
+  margin-left:50px;
+ 
 }
+
+button.new{
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  border: 2px solid #8c8c8c ;
+  background-color: #e2dddd;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  margin-left: 20px;
+  
+  padding: 5px;
+
+}
+
+
+.submission{
+  margin: 50px;
+  margin-left: 50px;
+
+}
+
+.label{
+  margin-left: 40px;
+  
+}
+
+label.label{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bolder;
+
+}
+
+
+
 
 /* Header */
 header {
@@ -139,6 +190,9 @@ header h1 {
   flex-direction: column;
   align-content: flex-end;
   justify-content: flex-end;
+  max-height: 50%;
+  border: 4px solid #8baa7a;
+  border-radius: 20px;
 }
 
 ul {
@@ -196,3 +250,13 @@ li button {
 li:hover .actions {
   display: block;
 }
+
+.submission {
+  max-width:500px;
+  justify-content: space-between;
+  border: 2px solid #E74C3C;
+  background-color: #000000;
+  
+
+}
+

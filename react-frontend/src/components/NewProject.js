@@ -49,7 +49,8 @@ function NewProject({onAddProject}) {
 
 
   return (
-  <form onSubmit = {handleSubmitClick}>
+  <form classname = "client_submission" onSubmit = {handleSubmitClick}>
+  
    <input
     type="text"
     value = {project}
@@ -68,6 +69,7 @@ function NewProject({onAddProject}) {
     placeholder = "comment"
     onChange = {(e) => setComment(e.target.value)}
    />
+   <label className="label">Client Name</label>
    <select onChange = {(e)=> setClientId(e.target.value)}>
           {
             clients.map((client)=><option key = {client.id} value = {client.id}> {client.name} </option>)
@@ -75,7 +77,7 @@ function NewProject({onAddProject}) {
           }
 
    </select>
-   <button type = "submit">Add</button>
+   <button className="new" type = "submit">Add</button>
 
 
    

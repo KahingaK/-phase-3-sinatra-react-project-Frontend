@@ -4,7 +4,7 @@ function Header({ isDarkMode, onToggleDarkMode }) {
   return (
     <nav>
     <header>
-      <h1>PROJECT MANAGEMENT</h1>
+      <h1>PROJECT MANAGEMENT APP</h1>
       
       <div className="toggle-switch">
         <input

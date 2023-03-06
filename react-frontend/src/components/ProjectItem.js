@@ -17,7 +17,7 @@ function ProjectItem({project, onProjectDelete}) {
   return (
     <li>
        <h1> {project.title}</h1>
-       <h2>Client:{}</h2>
+       
        <p>Completion : {project.completion}%</p>
        <p> Comments : {project.comment}</p>
 

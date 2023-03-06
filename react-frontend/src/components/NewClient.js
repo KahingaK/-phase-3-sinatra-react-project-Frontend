@@ -20,16 +20,18 @@ function NewClient() {
  }
   
   return (
-    <form onSubmit={handleSubmit}>
+    <div classname = "submission">
+    <form  onSubmit={handleSubmit}>
     <input
     type="text"
     value = {clientName}
     placeholder = "new client.."
     onChange = {(e) => setClientName(e.target.value)}
    />
-   <button type = "submit"> Add Client</button>
+   <button className='new' type = "submit"> Add Client</button>
 
     </form>
+    </div>
   )
 }
 
